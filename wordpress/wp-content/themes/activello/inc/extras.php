@@ -157,7 +157,7 @@ endif;
  */
 function activello_footer_info() {
 global $activello_footer_info;
-  printf( esc_html__( 'Theme by %1$s Powered by %2$s', 'activello' ) , '<a href="http://colorlib.com/" target="_blank">Colorlib</a>', '<a href="http://wordpress.org/" target="_blank">WordPress</a>');
+  printf( esc_html__( 'GDG Blog', 'activello' ) , '<a href="http://gdgvitvellore.com/" target="_blank">Visit Us</a>', '');
 }
 
 
@@ -189,7 +189,6 @@ function activello_caption($output, $attr, $content) {
   // Set up the attributes for the caption <figure>
   $attributes  = (!empty($attr['id']) ? ' id="' . esc_attr($attr['id']) . '"' : '' );
   $attributes .= ' class="thumbnail wp-caption ' . esc_attr($attr['align']) . '"';
-  $attributes .= ' style="width: ' . (esc_attr($attr['width']) + 10) . 'px"';
 
   $output  = '<figure' . $attributes .'>';
   $output .= do_shortcode($content);

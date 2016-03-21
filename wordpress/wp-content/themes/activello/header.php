@@ -23,6 +23,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <?php wp_head(); ?>
 
 </head>
@@ -45,10 +46,10 @@
 						</div>
 						<?php activello_header_menu(); // main navigation ?>
 
-						<div class="nav-search"><?php 
+						<div class="nav-search"><?php
                             add_filter('get_search_form', 'activello_header_search_filter',10,3);
                             echo get_search_form();
-                            remove_filter('get_search_form', 'activello_header_search_filter');?>							
+                            remove_filter('get_search_form', 'activello_header_search_filter');?>
 						</div>
 					</div>
 				</div>
@@ -75,7 +76,7 @@
 
 		<div class="container">
 			<div id="logo">
-				<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php
+				<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Blog" rel="home"><?php
 					if( $show_logo && $logo ) {
                         echo wp_get_attachment_image($logo, 'full');
 					}
