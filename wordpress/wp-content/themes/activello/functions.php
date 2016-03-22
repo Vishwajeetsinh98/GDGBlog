@@ -62,7 +62,6 @@ function activello_setup() {
   add_theme_support( 'post-thumbnails' );
 
   add_image_size( 'activello-featured', 1170, 550, true );
-  add_image_size( 'activello-slider', 1920, 550, true );
   add_image_size( 'activello-thumbnail', 330, 220, true );
   add_image_size( 'activello-medium', 640, 480, true );
 
@@ -264,5 +263,5 @@ add_action( 'after_setup_theme', 'activello_woo_setup' );
  */
 function activello_header_search_filter($form){
     $form = '<form action="'.esc_url( home_url( "/" ) ).'" method="get"><input type="text" name="s" value="'.get_search_query().'" placeholder="'. esc_attr_x( __('Search', 'activello'), 'search placeholder', 'activello' ).'"><button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="'. esc_attr_x( 'Search', 'submit button', 'activello' ).'"><i class="fa fa-search"></i></button></form>';
-    return $form;    
+    return $form;
 }

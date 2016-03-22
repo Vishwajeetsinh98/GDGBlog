@@ -27,7 +27,33 @@
 <?php wp_head(); ?>
 
 </head>
+<script type="text/javascript">
+$(document).ready(function() {
+	fixFlexsliderHeight();
+});
 
+$(window).load(function() {
+	fixFlexsliderHeight();
+});
+
+$(window).resize(function() {
+	fixFlexsliderHeight();
+});
+
+function fixFlexsliderHeight() {
+	// Set fixed height based on the tallest slide
+	$('.flexslider').each(function(){
+			var sliderHeight = 0;
+			$(this).find('.slides > li').each(function(){
+					slideHeight = $(this).height();
+					if (sliderHeight < slideHeight) {
+							sliderHeight = slideHeight;
+					}
+			});
+			$(this).find('ul.slides').css({'height' : 200px});
+	});
+}
+</script>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 

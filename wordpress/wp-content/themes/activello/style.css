@@ -1028,17 +1028,18 @@ input[type=submit]:hover,
 }
 .nav>li>a {
   text-transform: uppercase;
+  color: white;
 }
-.navbar.navbar-default {
-  background-color: #ffffff;
+.navbar-default {
+  background-color: #4582F4;
   margin-bottom: 0;
   font-weight: 400;
   min-height: auto;
   padding: 0;
   box-shadow: 0 0 2px #e3e3e3;
+  color: white;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #1c202a;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
@@ -1046,6 +1047,30 @@ padding: 20px 0;
 margin-right: 25px;
 line-height: 2.6;
 letter-spacing: 1px;
+color: white !important;
+}
+
+.navbar-default a:hover{
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 20px 0;
+  margin-right: 25px;
+  line-height: 2.6;
+  letter-spacing: 1px;
+  color: white !important;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.navbar-default a:active{
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 20px 0;
+  margin-right: 25px;
+  line-height: 2.6;
+  letter-spacing: 1px;
+  color: white !important;
 }
 .site-name  {
   display: inline-block;
@@ -1071,6 +1096,7 @@ letter-spacing: 1px;
 .navbar-default .navbar-nav > .open > a:focus {
   border-right: none;
   border-left: none;
+  color: white;
 }
 .navbar {
   border-radius: 0;
@@ -1088,6 +1114,9 @@ letter-spacing: 1px;
 .navbar-default .navbar-nav > .open > a:focus {
   color: #4582F4;
   background-color: transparent;
+}
+.menu-navbar a{
+  color: white;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
@@ -1115,7 +1144,7 @@ letter-spacing: 1px;
     background-color: #4582F4;
   }
   .navbar-collapse {
-    background: #ffffff;
+    background: #4582F4;
     float: none;
     position: absolute;
     top: 70px;
@@ -1123,6 +1152,7 @@ letter-spacing: 1px;
     padding: 0 15px;
     width: 100% !important;
     z-index: 999;
+    color: white;
   }
   .navbar-nav {
     margin: 0;
@@ -1772,4 +1802,9 @@ table#wp-calendar {
     width: 25%;
     height: 25%;
   }
+}
+
+.flexbox{
+  padding-top: 0px;
+  margin-top: 0px !important;
 }

@@ -16,11 +16,11 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info container">
 				<div class="row">
-					<?php if( !get_theme_mod('footer_social') ) activello_social_icons(); ?>
-					<div class="copyright col-md-12">
-						<?php echo esc_html( get_theme_mod( 'activello_footer_copyright', 'Activello' ) ); ?>
-						<?php activello_footer_info(); ?>
-					</div>
+					<p>
+						<span style="font-size: 20px">GDG Blog</span><br>
+						<a href="https://www.facebook.com/gdgvitvellore"><i style="font-size: 20px;margin-right: 15px" class="fa fa-facebook"></i></a>
+						<a href="https://github.com/gdgvit"><i style="font-size: 20px" class="fa fa-github-alt"></i></a>
+					</p>
 				</div>
 			</div><!-- .site-info -->
 			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
@@ -28,7 +28,7 @@
 	</div>
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
+<!--php wp_footer();-->
 
 </body>
 </html>

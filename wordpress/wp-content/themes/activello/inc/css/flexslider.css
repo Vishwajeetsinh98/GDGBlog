@@ -152,13 +152,13 @@ html[xmlns] .slides {display: block;}
 }
 .flexslider img{
   -webkit-filter: brightness(20%);
+
 }
 @media (max-width: 768px) {
   .flex-caption {
     display: none;
   }
 }
-
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}

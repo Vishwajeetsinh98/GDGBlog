@@ -157,7 +157,7 @@ endif;
  */
 function activello_footer_info() {
 global $activello_footer_info;
-  printf( esc_html__( 'GDG Blog', 'activello' ) , '<a href="http://gdgvitvellore.com/" target="_blank">Visit Us</a>', '');
+  printf( esc_html__( 'GDG Blog', 'activello' ) , '<a href="http://gdgvitvellore.com/" target="_blank">Visit Us</a>', '<br><i class="fa fa-facebook"></i>');
 }
 
 
